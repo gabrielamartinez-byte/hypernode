@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hypernode Systems | Servidores Virtuales de Alto Rendimiento</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #111827;
+      --border: #1f2937;
+      --accent: #8b5cf6;
+      --accent-hover: #7c3aed;
+      --text: #f9fafb;
+      --text-muted: #9ca3af;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: #070a10; border-bottom: 1px solid var(--border); padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 50; }
+    .brand { font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px; color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .brand span { color: var(--accent); }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; }
+    nav a:hover, nav a.active { color: var(--accent); }
+    .hero { max-width: 1100px; margin: 4rem auto; padding: 0 1.5rem; text-align: center; }
+    .badge { display: inline-block; background: rgba(139, 92, 246, 0.12); color: var(--accent); border: 1px solid rgba(139, 92, 246, 0.25); padding: 0.35rem 1rem; border-radius: 999px; font-size: 0.85rem; font-weight: 600; margin-bottom: 1.5rem; }
+    .hero h1 { font-size: 3rem; font-weight: 800; line-height: 1.2; margin-bottom: 1.5rem; letter-spacing: -1px; }
+    .hero p { font-size: 1.15rem; color: var(--text-muted); max-width: 750px; margin: 0 auto 2.5rem; }
+    .btn-group { display: flex; gap: 1rem; justify-content: center; }
+    .btn { padding: 0.8rem 1.6rem; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.95rem; display: inline-block; }
+    .btn-primary { background: var(--accent); color: #fff; }
+    .btn-primary:hover { background: var(--accent-hover); }
+    .btn-secondary { background: var(--card); color: var(--text); border: 1px solid var(--border); }
+    .btn-secondary:hover { background: #1e293b; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; max-width: 1100px; margin: 4rem auto; padding: 0 1.5rem; }
+    .card { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; }
+    .card h3 { color: var(--accent); margin-bottom: 0.75rem; font-size: 1.25rem; }
+    .card p { color: var(--text-muted); font-size: 0.95rem; }
+    footer { border-top: 1px solid var(--border); padding: 3rem 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="brand">HYPER<span>NODE</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Inicio</a></li>
+        <li><a href="instancias.html">Instancias</a></li>
+        <li><a href="red.html">Topología Red</a></li>
+        <li><a href="sla.html">SLA & Disponibilidad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="badge">Infraestructura Virtual de Nueva Generación</span>
+    <h1>Cómputo en la Nube con Aislamiento Estricto KVM</h1>
+    <p>Despliegue de instancias virtuales optimizadas con discos NVMe de nivel empresarial, núcleos dedicados y conectividad redundante de 10 Gbps para cargas de trabajo críticas.</p>
+    <div class="btn-group">
+      <a href="instancias.html" class="btn btn-primary">Explorar Instancias</a>
+      <a href="contacto.html" class="btn btn-secondary">Aprovisionar Nodo</a>
+    </div>
+  </section>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Hipervisores KVM de Baja Sobreasignación</h3>
+      <p>Garantizamos recursos de cómputo y memoria RAM dedicados, eliminando el impacto de vecinos ruidosos en cada clúster.</p>
+    </div>
+    <div class="card">
+      <h3>Almacenamiento NVMe PCIe 4.0</h3>
+      <p>I/O acelerado con arreglos Ceph distribuidos y redundancia de datos por triplicado para tolerancia completa a fallos de hardware.</p>
+    </div>
+    <div class="card">
+      <h3>Monitoreo y Telemetría Continua</h3>
+      <p>Supervisión de salud de instancias en tiempo real con emisión de métricas de rendimiento y notificaciones operativas inmediatas.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Hypernode Systems. Plataforma de virtualización e infraestructura en la nube.</p>
+  </footer>
+</body>
+</html>
