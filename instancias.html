@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instancias Virtuales | Hypernode Systems</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #111827;
+      --border: #1f2937;
+      --accent: #8b5cf6;
+      --text: #f9fafb;
+      --text-muted: #9ca3af;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: var(--bg); color: var(--text); line-height: 1.6; }
+    header { background: #070a10; border-bottom: 1px solid var(--border); padding: 1.2rem 2rem; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 50; }
+    .brand { font-size: 1.4rem; font-weight: 800; color: var(--text); text-decoration: none; }
+    .brand span { color: var(--accent); }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav a { color: var(--text-muted); text-decoration: none; font-size: 0.95rem; font-weight: 500; }
+    nav a:hover, nav a.active { color: var(--accent); }
+    .container { max-width: 1000px; margin: 3rem auto; padding: 0 1.5rem; }
+    h1 { font-size: 2.2rem; font-weight: 800; margin-bottom: 1rem; color: var(--text); }
+    .lead { color: var(--text-muted); margin-bottom: 3rem; font-size: 1.05rem; }
+    .tier-box { background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 2rem; margin-bottom: 2rem; }
+    .tier-box h2 { color: var(--accent); font-size: 1.4rem; margin-bottom: 0.75rem; }
+    .tier-box ul { list-style-position: inside; color: var(--text-muted); margin-top: 1rem; }
+    .tier-box li { margin-bottom: 0.5rem; }
+    footer { border-top: 1px solid var(--border); padding: 3rem 1.5rem; text-align: center; color: var(--text-muted); font-size: 0.85rem; margin-top: 5rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="brand">HYPER<span>NODE</span></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="instancias.html" class="active">Instancias</a></li>
+        <li><a href="red.html">Topología Red</a></li>
+        <li><a href="sla.html">SLA & Disponibilidad</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Perfiles de Cómputo Virtual</h1>
+    <p class="lead">Soluciones dimensionadas para microservicios, bases de datos relacionales y clústeres de alta concurrencia.</p>
+
+    <div class="tier-box">
+      <h2>1. Nodos de Propósito General (General Compute)</h2>
+      <p>Equilibrio ideal de núcleos vCPU y memoria para aplicaciones web, servidores de pruebas y entornos de microservicios.</p>
+      <ul>
+        <li>Procesadores AMD EPYC / Intel Xeon de última generación.</li>
+        <li>Memoria RAM ECC registrada con protección contra corrupción de bits.</li>
+        <li>Acceso root completo y aprovisionamiento automatizado mediante cloud-init.</li>
+      </ul>
+    </div>
+
+    <div class="tier-box">
+      <h2>2. Nodos Optimizados para Memoria (Memory-Optimized)</h2>
+      <p>Diseñados para bases de datos en memoria (Redis/Memcached), análisis en tiempo real y sistemas ERP corporativos.</p>
+      <ul>
+        <li>Relación de 8 GB de RAM por cada núcleo vCPU dedicado.</li>
+        <li>Discos de arranque NVMe con latencia de lectura inferior a 0.5 milisegundos.</li>
+        <li>Backups diarios instantáneos a nivel de bloque sin tiempo de parada.</li>
+      </ul>
+    </div>
+
+    <div class="tier-box">
+      <h2>3. Nodos de Alta Disponibilidad & Storage</h2>
+      <p>Configuraciones dedicadas a almacenamiento distribuido y servidores de archivos empresariales redundantes.</p>
+      <ul>
+        <li>Volúmenes de almacenamiento desacoplados y ampliables en caliente.</li>
+        <li>Replicación síncrona en múltiples zonas de disponibilidad.</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Hypernode Systems. Aprovisionamiento de infraestructura virtual.</p>
+  </footer>
+</body>
+</html>
